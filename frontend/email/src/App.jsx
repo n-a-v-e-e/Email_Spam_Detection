@@ -3,7 +3,7 @@ import mailboxIcon from './photos/shared-mailbox.978x1024.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import backgroundImage from './photos/img3.jpg';
-
+import { Link } from 'react-router-dom';
 
 
 export default function App() {
@@ -48,8 +48,8 @@ export default function App() {
               </div>
             </div>
             <div className="flex items-center space-x-8">
-              <a href="/home" className="text-black text-lg font-bold  hover:text-indigo-500">Home</a>
-              <a href='/about' className='text-black text-lg font-bold hover:text-indigo-500'>About</a>
+              <Link to="/home" className="text-black text-lg font-bold  hover:text-indigo-500">Home</Link>
+              <Link to='/about' className='text-black text-lg font-bold hover:text-indigo-500'>About</Link>
             </div>
           </div>
         </div>
