@@ -7,6 +7,7 @@ import emailIcon from "./photos/gmail.png";
 import videoWallpaper from "./photos/video.mp4"; 
 import 'aos/dist/aos.css';
 import Aos from 'aos';
+import { Link } from 'react-router-dom';
 
 
 
@@ -32,12 +33,12 @@ export default function About() {
         
         <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm" />
         <div className="absolute top-5 right-5">
-        <a 
-          href="/home" 
+        <Link
+          to="/home" 
           className="text-white text-lg font-bold  px-4 py-2 rounded-lg hover:text-indigo-200 shadow-lg shadow-black"
         >
           Home
-        </a>
+        </Link>
       </div>
         <div className="relative text-left ml-20 font-serif text-white p-8">
          <h1 className="text-6xl font-bold mb-7" data-aos="fade-up">
